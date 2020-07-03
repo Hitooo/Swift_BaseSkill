@@ -1,0 +1,6 @@
+framework module Pods_Swift_BaseSkill {
+  umbrella header "Pods-Swift_BaseSkill-umbrella.h"
+
+  export *
+  module * { export * }
+}
