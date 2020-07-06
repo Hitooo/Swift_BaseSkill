@@ -87,7 +87,6 @@
 			children = (
 				AD0E59C224AB18450052219B /* HTMainVC.swift */,
 				AD0E59C524AB1D8A0052219B /* HTMainCell.swift */,
-				AD0E59C724AB31F00052219B /* Main.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -223,6 +222,7 @@
 				AD2E8F3C24766A7200AB8664 /* Assets.xcassets */,
 				AD2E8F3E24766A7200AB8664 /* LaunchScreen.storyboard */,
 				AD2E8F4124766A7200AB8664 /* Info.plist */,
+				AD0E59C724AB31F00052219B /* Main.storyboard */,
 			);
 			path = AppInfo;
 			sourceTree = "<group>";
