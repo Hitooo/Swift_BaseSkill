@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class HTMainVC: HTBaseVC,UITableViewDelegate,UITableViewDataSource {
     
@@ -19,6 +20,7 @@ class HTMainVC: HTBaseVC,UITableViewDelegate,UITableViewDataSource {
         [
             ["title":"函数和闭包","class":"HTFunctionBlockVC"],
             ["title":"枚举","class":"HTEnumVC"],
+            ["title":"泛型","class":"HTGenericVC"],
         ]
     ]
 

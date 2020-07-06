@@ -9,7 +9,28 @@
 import UIKit
 
 class HTSkillBaseVC: HTBaseVC {
-
+    
+    var totalSteps:Int = 0 {
+        
+//        willSet(customName){
+//            print("将 totalSteps 的值设置为 \(customName)")
+//        }
+        
+        willSet{
+            print("将 totalSteps 的值设置为 \(newValue)")
+        }
+        
+        didSet{
+            if totalSteps > oldValue  {
+                print("增加了 \(totalSteps - oldValue) 步")
+            }
+            else{
+                print("减少了 \(oldValue - totalSteps) 步")
+            }
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         test1()

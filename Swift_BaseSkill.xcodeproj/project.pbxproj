@@ -27,8 +27,8 @@
 		AD2E8F3624766A7100AB8664 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2E8F3524766A7100AB8664 /* SceneDelegate.swift */; };
 		AD2E8F3D24766A7200AB8664 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD2E8F3C24766A7200AB8664 /* Assets.xcassets */; };
 		AD2E8F4024766A7200AB8664 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD2E8F3E24766A7200AB8664 /* LaunchScreen.storyboard */; };
-		AD6949C424AECE51008046E9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD6949C324AECE51008046E9 /* Default-568h@2x.png */; };
 		AD6949C724AEE018008046E9 /* HTEnumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6949C624AEE018008046E9 /* HTEnumVC.swift */; };
+		AD6949CA24B2F4F1008046E9 /* HTGenericVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6949C924B2F4F1008046E9 /* HTGenericVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,8 +55,8 @@
 		AD2E8F3C24766A7200AB8664 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD2E8F3F24766A7200AB8664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD2E8F4124766A7200AB8664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD6949C324AECE51008046E9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		AD6949C624AEE018008046E9 /* HTEnumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTEnumVC.swift; sourceTree = "<group>"; };
+		AD6949C924B2F4F1008046E9 /* HTGenericVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTGenericVC.swift; sourceTree = "<group>"; };
 		ADCC8C520E40BA60AD1D8F2F /* Pods_Swift_BaseSkill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_BaseSkill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6C5E5096028FE9632B5EE4A /* Pods-Swift_BaseSkill.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift_BaseSkill.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift_BaseSkill/Pods-Swift_BaseSkill.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +103,7 @@
 		AD0E59CC24AC380C0052219B /* BaseModule */ = {
 			isa = PBXGroup;
 			children = (
+				AD6949CB24B32021008046E9 /* BaseNetword */,
 				AD0E59DA24AC686E0052219B /* BaseCommon */,
 				AD0E59D324AC38C30052219B /* BaseProtocol */,
 				AD0E59D024AC38A60052219B /* BaseView */,
@@ -174,7 +175,6 @@
 		AD2E8F2724766A7100AB8664 = {
 			isa = PBXGroup;
 			children = (
-				AD6949C324AECE51008046E9 /* Default-568h@2x.png */,
 				AD2E8F3224766A7100AB8664 /* Swift_BaseSkill */,
 				AD2E8F3124766A7100AB8664 /* Products */,
 				028FEABB1AE4228AF7C99A53 /* Pods */,
@@ -204,6 +204,7 @@
 		AD6949C124AECC9C008046E9 /* AllModule */ = {
 			isa = PBXGroup;
 			children = (
+				AD6949C824B2F49D008046E9 /* Generic */,
 				AD6949C524AEDFF6008046E9 /* Enum */,
 				AD0E59C924AC37D10052219B /* SkillBase */,
 				AD0E59E024AD8D400052219B /* StringHandle */,
@@ -232,6 +233,21 @@
 				AD6949C624AEE018008046E9 /* HTEnumVC.swift */,
 			);
 			path = Enum;
+			sourceTree = "<group>";
+		};
+		AD6949C824B2F49D008046E9 /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				AD6949C924B2F4F1008046E9 /* HTGenericVC.swift */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
+		AD6949CB24B32021008046E9 /* BaseNetword */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseNetword;
 			sourceTree = "<group>";
 		};
 		D87F5B9529A65E46C89223AE /* Frameworks */ = {
@@ -303,7 +319,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD0E59C824AB31F00052219B /* Main.storyboard in Resources */,
-				AD6949C424AECE51008046E9 /* Default-568h@2x.png in Resources */,
 				AD2E8F4024766A7200AB8664 /* LaunchScreen.storyboard in Resources */,
 				AD2E8F3D24766A7200AB8664 /* Assets.xcassets in Resources */,
 			);
@@ -379,6 +394,7 @@
 				AD2E8F3624766A7100AB8664 /* SceneDelegate.swift in Sources */,
 				AD0E59E224AD8DD00052219B /* HTStringTitleCell.swift in Sources */,
 				AD0E59D224AC38BC0052219B /* HTBaseVC.swift in Sources */,
+				AD6949CA24B2F4F1008046E9 /* HTGenericVC.swift in Sources */,
 				AD0E59E624ADAB240052219B /* HTStringHandleModel.swift in Sources */,
 				AD0E59CF24AC388D0052219B /* HTBaseView.swift in Sources */,
 				AD0E59C324AB18450052219B /* HTMainVC.swift in Sources */,

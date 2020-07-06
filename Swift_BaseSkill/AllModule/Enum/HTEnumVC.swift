@@ -8,21 +8,21 @@
 
 import UIKit
 
-class HTEnumVC: HTBaseVC {
+enum DirectionType:CaseIterable {
+    case north
+    case south
+    case east
+    case west
+}
 
-    enum DirectionType {
-        case north
-        case south
-        case east
-        case west
-    }
+class HTEnumVC: HTBaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
                 
         let type = DirectionType.east
-
         test1(type: type)
+        test2()
     }
     
     override func createUI() {
@@ -40,6 +40,13 @@ class HTEnumVC: HTBaseVC {
             print("Mostly harmless")
         default:
             print("Not a safe place for humans")
+        }
+    }
+    
+    func test2() -> Void {
+        
+        for item in DirectionType.allCases {
+            print("\r\n----\(item)")
         }
         
     }
