@@ -10,7 +10,6 @@
 		592621842F75FF7F1C3BCAD4 /* Pods_Swift_BaseSkill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCC8C520E40BA60AD1D8F2F /* Pods_Swift_BaseSkill.framework */; };
 		AD0E59C324AB18450052219B /* HTMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0E59C224AB18450052219B /* HTMainVC.swift */; };
 		AD0E59C624AB1D8A0052219B /* HTMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0E59C524AB1D8A0052219B /* HTMainCell.swift */; };
-		AD0E59C824AB31F00052219B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD0E59C724AB31F00052219B /* Main.storyboard */; };
 		AD0E59CF24AC388D0052219B /* HTBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0E59CE24AC388D0052219B /* HTBaseView.swift */; };
 		AD0E59D224AC38BC0052219B /* HTBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0E59D124AC38BC0052219B /* HTBaseVC.swift */; };
 		AD0E59D524AC39150052219B /* HTBaseUIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0E59D424AC39150052219B /* HTBaseUIProtocol.swift */; };
@@ -35,7 +34,6 @@
 		049285A436013F3999F4BDA8 /* Pods-Swift_BaseSkill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift_BaseSkill.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swift_BaseSkill/Pods-Swift_BaseSkill.debug.xcconfig"; sourceTree = "<group>"; };
 		AD0E59C224AB18450052219B /* HTMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMainVC.swift; sourceTree = "<group>"; };
 		AD0E59C524AB1D8A0052219B /* HTMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMainCell.swift; sourceTree = "<group>"; };
-		AD0E59C724AB31F00052219B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AD0E59CE24AC388D0052219B /* HTBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTBaseView.swift; sourceTree = "<group>"; };
 		AD0E59D124AC38BC0052219B /* HTBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTBaseVC.swift; sourceTree = "<group>"; };
 		AD0E59D424AC39150052219B /* HTBaseUIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTBaseUIProtocol.swift; sourceTree = "<group>"; };
@@ -222,7 +220,6 @@
 				AD2E8F3C24766A7200AB8664 /* Assets.xcassets */,
 				AD2E8F3E24766A7200AB8664 /* LaunchScreen.storyboard */,
 				AD2E8F4124766A7200AB8664 /* Info.plist */,
-				AD0E59C724AB31F00052219B /* Main.storyboard */,
 			);
 			path = AppInfo;
 			sourceTree = "<group>";
@@ -318,7 +315,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD0E59C824AB31F00052219B /* Main.storyboard in Resources */,
 				AD2E8F4024766A7200AB8664 /* LaunchScreen.storyboard in Resources */,
 				AD2E8F3D24766A7200AB8664 /* Assets.xcassets in Resources */,
 			);
