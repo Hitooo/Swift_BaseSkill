@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Alamofire
+import KakaJSON
 
 class HTMainVC: HTBaseVC,UITableViewDelegate,UITableViewDataSource {
     
@@ -26,6 +26,23 @@ class HTMainVC: HTBaseVC,UITableViewDelegate,UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let urlStr = "https://miniapi.retailo2o.com/common/cms/publish/999/sdeerversion2020.json?_platform_num=101273"
+        
+        HTNetwork.requestGetData(URLString: urlStr) { (result, error) in
+            
+            if error != nil{
+                let alert = UIAlertController.init(title: HTAlertTitle, message: nil, preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction.init(title: HTAlertOkTitle, style: UIAlertAction.Style.cancel, handler: nil))
+                alert.message = "请求失败"
+                self.present(alert, animated: true, completion: nil)
+            }
+            else{
+                
+                let prodiuct = result?.kj.model(HTMainModel.self)
+                print(prodiuct?.siteId)
+            }
+        }
     }
     
     override func createUI() {

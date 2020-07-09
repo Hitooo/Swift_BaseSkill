@@ -10,6 +10,8 @@ import UIKit
 
 class HTFunctionBlockVC: HTBaseVC {
 
+    var someClosure:((String,String) -> Bool)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         test1()
@@ -18,6 +20,14 @@ class HTFunctionBlockVC: HTBaseVC {
         let _ = hitoo()
 
         test2()
+        
+        someClosure = backwardWithPrint(_:_:)
+        
+        someClosure = {
+            (p1,p2) -> Bool in
+                return false
+            }
+        }
     }
     
     func test1() {

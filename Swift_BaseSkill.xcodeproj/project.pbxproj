@@ -28,6 +28,9 @@
 		AD2E8F4024766A7200AB8664 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD2E8F3E24766A7200AB8664 /* LaunchScreen.storyboard */; };
 		AD6949C724AEE018008046E9 /* HTEnumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6949C624AEE018008046E9 /* HTEnumVC.swift */; };
 		AD6949CA24B2F4F1008046E9 /* HTGenericVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6949C924B2F4F1008046E9 /* HTGenericVC.swift */; };
+		AD6949D124B4660B008046E9 /* HTNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6949D024B4660B008046E9 /* HTNetwork.swift */; };
+		AD6949D424B468A7008046E9 /* HTBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6949D324B468A7008046E9 /* HTBaseModel.swift */; };
+		AD6949D824B468EE008046E9 /* HTMainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6949D724B468EE008046E9 /* HTMainModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +58,9 @@
 		AD2E8F4124766A7200AB8664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD6949C624AEE018008046E9 /* HTEnumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTEnumVC.swift; sourceTree = "<group>"; };
 		AD6949C924B2F4F1008046E9 /* HTGenericVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTGenericVC.swift; sourceTree = "<group>"; };
+		AD6949D024B4660B008046E9 /* HTNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTNetwork.swift; sourceTree = "<group>"; };
+		AD6949D324B468A7008046E9 /* HTBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTBaseModel.swift; sourceTree = "<group>"; };
+		AD6949D724B468EE008046E9 /* HTMainModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMainModels.swift; sourceTree = "<group>"; };
 		ADCC8C520E40BA60AD1D8F2F /* Pods_Swift_BaseSkill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_BaseSkill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6C5E5096028FE9632B5EE4A /* Pods-Swift_BaseSkill.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift_BaseSkill.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift_BaseSkill/Pods-Swift_BaseSkill.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +91,7 @@
 			children = (
 				AD0E59C224AB18450052219B /* HTMainVC.swift */,
 				AD0E59C524AB1D8A0052219B /* HTMainCell.swift */,
+				AD6949D724B468EE008046E9 /* HTMainModels.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -100,7 +107,8 @@
 		AD0E59CC24AC380C0052219B /* BaseModule */ = {
 			isa = PBXGroup;
 			children = (
-				AD6949CB24B32021008046E9 /* BaseNetword */,
+				AD6949D224B46896008046E9 /* BaseModel */,
+				AD6949CB24B32021008046E9 /* BaseNetwork */,
 				AD0E59DA24AC686E0052219B /* BaseCommon */,
 				AD0E59D324AC38C30052219B /* BaseProtocol */,
 				AD0E59D024AC38A60052219B /* BaseView */,
@@ -190,9 +198,9 @@
 		AD2E8F3224766A7100AB8664 /* Swift_BaseSkill */ = {
 			isa = PBXGroup;
 			children = (
+				AD0E59CC24AC380C0052219B /* BaseModule */,
 				AD6949C224AECCCA008046E9 /* AppInfo */,
 				AD6949C124AECC9C008046E9 /* AllModule */,
-				AD0E59CC24AC380C0052219B /* BaseModule */,
 				AD0E59C424AB1D630052219B /* Home */,
 			);
 			path = Swift_BaseSkill;
@@ -240,11 +248,20 @@
 			path = Generic;
 			sourceTree = "<group>";
 		};
-		AD6949CB24B32021008046E9 /* BaseNetword */ = {
+		AD6949CB24B32021008046E9 /* BaseNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				AD6949D024B4660B008046E9 /* HTNetwork.swift */,
 			);
-			path = BaseNetword;
+			path = BaseNetwork;
+			sourceTree = "<group>";
+		};
+		AD6949D224B46896008046E9 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				AD6949D324B468A7008046E9 /* HTBaseModel.swift */,
+			);
+			path = BaseModel;
 			sourceTree = "<group>";
 		};
 		D87F5B9529A65E46C89223AE /* Frameworks */ = {
@@ -333,6 +350,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Swift_BaseSkill/Pods-Swift_BaseSkill-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/KakaJSON/KakaJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -341,6 +359,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KakaJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -381,14 +400,17 @@
 				AD0E59D924AC3D4A0052219B /* HTSkillBaseVC.swift in Sources */,
 				AD0E59DC24AC68930052219B /* HTUtil.swift in Sources */,
 				AD0E59E424AD8DE70052219B /* HTStringValueCell.swift in Sources */,
+				AD6949D824B468EE008046E9 /* HTMainModels.swift in Sources */,
 				AD0E59D524AC39150052219B /* HTBaseUIProtocol.swift in Sources */,
 				AD0E59E924ADC9340052219B /* HTControllFlowVC.swift in Sources */,
 				AD0E59D724AC394E0052219B /* HTBaseTableCell.swift in Sources */,
 				AD2E8F3424766A7100AB8664 /* AppDelegate.swift in Sources */,
+				AD6949D124B4660B008046E9 /* HTNetwork.swift in Sources */,
 				AD0E59C624AB1D8A0052219B /* HTMainCell.swift in Sources */,
 				AD0E59EC24ADE0A20052219B /* HTFunctionBlockVC.swift in Sources */,
 				AD2E8F3624766A7100AB8664 /* SceneDelegate.swift in Sources */,
 				AD0E59E224AD8DD00052219B /* HTStringTitleCell.swift in Sources */,
+				AD6949D424B468A7008046E9 /* HTBaseModel.swift in Sources */,
 				AD0E59D224AC38BC0052219B /* HTBaseVC.swift in Sources */,
 				AD6949CA24B2F4F1008046E9 /* HTGenericVC.swift in Sources */,
 				AD0E59E624ADAB240052219B /* HTStringHandleModel.swift in Sources */,
@@ -545,6 +567,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

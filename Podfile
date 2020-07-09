@@ -8,5 +8,6 @@ target 'Swift_BaseSkill' do
   pod 'SnapKit', '~> 5.0.0'
   pod 'SwiftyJSON', '~> 4.0'
   pod 'Alamofire', '~> 5.2'
-  
+  pod 'KakaJSON', '~> 1.1.2'
+  pod 'NVActivityIndicatorView', '~> 5.0.0'
 end
