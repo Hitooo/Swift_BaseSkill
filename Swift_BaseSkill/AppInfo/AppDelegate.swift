@@ -45,6 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
         //我是Dev分支的第二次提交；
+        //我是Dev分支的第4次提交；
     }
 
     func application222(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
