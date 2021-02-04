@@ -40,12 +40,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application1(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         //我是Dev分支的第一次提交；
         //我是Dev分支的第三次提交；
+        //我是TestA分支的第一次提交；
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
 
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
         //我是Dev分支的第二次提交；
         //我是Dev分支的第4次提交；
+        //我是TestA分支的第二次提交；
     }
 
     func application222(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
