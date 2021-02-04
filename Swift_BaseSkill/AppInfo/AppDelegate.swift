@@ -5,6 +5,20 @@
 //  Created by haitaozhang on 2020/5/21.
 //  Copyright © 2020 haitaozhang. All rights reserved.
 //
+//
+//  AppDelegate.swift
+//  Swift_BaseSkill
+//
+//  Created by haitaozhang on 2020/5/21.
+//  Copyright © 2020 haitaozhang. All rights reserved.
+//
+//
+//  AppDelegate.swift
+//  Swift_BaseSkill
+//
+//  Created by haitaozhang on 2020/5/21.
+//  Copyright © 2020 haitaozhang. All rights reserved.
+//
 
 import UIKit
 
@@ -32,3 +46,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+//
+//  AppDelegate.swift
+//  Swift_BaseSkill
+//
+//  Created by haitaozhang on 2020/5/21.
+//  Copyright © 2020 haitaozhang. All rights reserved.
+//
