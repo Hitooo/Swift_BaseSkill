@@ -5,6 +5,20 @@
 //  Created by haitaozhang on 2020/5/21.
 //  Copyright © 2020 haitaozhang. All rights reserved.
 //
+//
+//  AppDelegate.swift
+//  Swift_BaseSkill
+//
+//  Created by haitaozhang on 2020/5/21.
+//  Copyright © 2020 haitaozhang. All rights reserved.
+//
+//
+//  AppDelegate.swift
+//  Swift_BaseSkill
+//
+//  Created by haitaozhang on 2020/5/21.
+//  Copyright © 2020 haitaozhang. All rights reserved.
+//
 
 import UIKit
 
@@ -35,6 +49,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
+    func application222(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
+        // Called when the user discards a scene session.
+        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
+        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    }
 
 }
 
+//
+//  AppDelegate.swift
+//  Swift_BaseSkill
+//
+//  Created by haitaozhang on 2020/5/21.
+//  Copyright © 2020 haitaozhang. All rights reserved.
+//
