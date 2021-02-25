@@ -15,7 +15,8 @@ class HTMainVC: HTBaseVC,UITableViewDelegate,UITableViewDataSource {
         [
             ["title":"基础部分222","class":"HTSkillBaseVC"],
             ["title":"基础运算符","class":"HTStringHandleVC"],
-            ["title":"控制流","class":"HTControllFlowVC"],
+            ["title":"控制流1111","class":"HTControllFlowVC"],
+            ["title":"控制流","class":"HTControllFlowVC"]
         ],
         [
             ["title":"函数和闭包2222","class":"HTFunctionBlockVC"],
