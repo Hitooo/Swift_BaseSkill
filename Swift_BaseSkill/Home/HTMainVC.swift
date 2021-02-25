@@ -13,7 +13,7 @@ class HTMainVC: HTBaseVC,UITableViewDelegate,UITableViewDataSource {
     
     let dataArr = [
         [
-            ["title":"基础部分","class":"HTSkillBaseVC"],
+            ["title":"基础部分111","class":"HTSkillBaseVC"],
             ["title":"基础运算符","class":"HTStringHandleVC"],
             ["title":"控制流","class":"HTControllFlowVC"],
         ],
