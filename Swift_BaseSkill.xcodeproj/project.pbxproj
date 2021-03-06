@@ -31,6 +31,7 @@
 		AD6949D124B4660B008046E9 /* HTNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6949D024B4660B008046E9 /* HTNetwork.swift */; };
 		AD6949D424B468A7008046E9 /* HTBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6949D324B468A7008046E9 /* HTBaseModel.swift */; };
 		AD6949D824B468EE008046E9 /* HTMainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6949D724B468EE008046E9 /* HTMainModels.swift */; };
+		AD7576B425F322ED00C2F19F /* HTFolderView in Resources */ = {isa = PBXBuildFile; fileRef = AD7576B325F322ED00C2F19F /* HTFolderView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		AD6949D024B4660B008046E9 /* HTNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTNetwork.swift; sourceTree = "<group>"; };
 		AD6949D324B468A7008046E9 /* HTBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTBaseModel.swift; sourceTree = "<group>"; };
 		AD6949D724B468EE008046E9 /* HTMainModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMainModels.swift; sourceTree = "<group>"; };
+		AD7576B325F322ED00C2F19F /* HTFolderView */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HTFolderView; path = HTFolderView/HTFolderView; sourceTree = SOURCE_ROOT; };
 		ADCC8C520E40BA60AD1D8F2F /* Pods_Swift_BaseSkill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_BaseSkill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6C5E5096028FE9632B5EE4A /* Pods-Swift_BaseSkill.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift_BaseSkill.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift_BaseSkill/Pods-Swift_BaseSkill.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -198,6 +200,7 @@
 		AD2E8F3224766A7100AB8664 /* Swift_BaseSkill */ = {
 			isa = PBXGroup;
 			children = (
+				AD7576B325F322ED00C2F19F /* HTFolderView */,
 				AD0E59CC24AC380C0052219B /* BaseModule */,
 				AD6949C224AECCCA008046E9 /* AppInfo */,
 				AD6949C124AECC9C008046E9 /* AllModule */,
@@ -333,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD2E8F4024766A7200AB8664 /* LaunchScreen.storyboard in Resources */,
+				AD7576B425F322ED00C2F19F /* HTFolderView in Resources */,
 				AD2E8F3D24766A7200AB8664 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
